@@ -1,4 +1,7 @@
+"use client"
+
 import Image from "next/image";
+import {useDropzone} from "react-dropzone";
 
 export default function Home() {
   return (
@@ -48,6 +51,7 @@ export default function Home() {
             Read our docs
           </a>
         </div>
+        <Basic />
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
         <a
@@ -97,5 +101,38 @@ export default function Home() {
         </a>
       </footer>
     </div>
+  );
+}
+
+function Basic(props) {
+  const {acceptedFiles, getRootProps, getInputProps} = useDropzone();
+  const files = acceptedFiles.map(file => (
+    <li key={file.path} className="mb-2">
+      {file.name}:&nbsp;
+      <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
+        {file.path}
+      </code>
+      &nbsp;[{file.type}]&nbsp;&mdash; {file.size} bytes
+    </li>
+  ));
+  return (
+    <section className="font-[family-name:var(--font-geist-mono)]">
+      <div {...getRootProps({className: "bg-white hover:bg-slate-100 dark:bg-slate-800 hover:dark:bg-slate-900 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl transition-colors"})}>
+        <input {...getInputProps()} />
+        <p className="text-sm text-center">Drag 'n' drop some files here, or click to select files</p>
+      </div>
+      <aside className="flex gap-4 justify-items-left flex-col py-8">
+        {
+          files.length > 0
+            ? (
+              <>
+                <h4 className="text-sm text-left">Files:</h4>
+                <ol className="list-inside list-decimal text-sm text-left">{files}</ol>
+              </>
+            )
+            : (<p className="text-sm text-left">No files dropped/selected.</p>)
+        }
+      </aside>
+    </section>
   );
 }
