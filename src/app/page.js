@@ -117,7 +117,11 @@ function Basic(props) {
   ));
   return (
     <section className="font-[family-name:var(--font-geist-mono)]">
-      <div {...getRootProps({className: "bg-white hover:bg-slate-100 dark:bg-slate-800 hover:dark:bg-slate-900 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl transition-colors"})}>
+      <div {...getRootProps({
+        className: "bg-white hover:bg-slate-100 dark:bg-slate-800 hover:dark:bg-slate-900 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl transition-colors",
+        id: "cy-dropzone"
+      })
+      }>
         <input {...getInputProps()} />
         <p className="text-sm text-center">Drag &apos;n&apos; drop some files here, or click to select files</p>
       </div>
@@ -127,7 +131,7 @@ function Basic(props) {
             ? (
               <>
                 <h4 className="text-sm text-left">Files:</h4>
-                <ol className="list-inside list-decimal text-sm text-left">{files}</ol>
+                <ol id="cy-list" className="list-inside list-decimal text-sm text-left">{files}</ol>
               </>
             )
             : (<p className="text-sm text-left">No files dropped/selected.</p>)
