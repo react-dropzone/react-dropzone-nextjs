@@ -3,7 +3,7 @@
 Guidance for AI coding agents in this repo. Human contributors: see [README.md](./README.md).
 
 This is `react-dropzone-nextjs`: a reference implementation and showcase demonstrating how to
-cleanly integrate `react-dropzone` with Next.js App Router (Next.js 15, React 18, TypeScript,
+cleanly integrate `react-dropzone` with Next.js App Router (Next.js 16, React 19, TypeScript,
 Tailwind CSS), with a primary focus on Server-Side Rendering (SSR) compatibility, hydration safety,
 and client-side memory management.
 

@@ -1,6 +1,6 @@
 # React Dropzone + Next.js App Router Showcase
 
-A modern, production-ready reference implementation demonstrating how to cleanly integrate [react-dropzone](https://react-dropzone.js.org/) with [Next.js 15](https://nextjs.org/) App Router, TypeScript, and Tailwind CSS.
+A modern, production-ready reference implementation demonstrating how to cleanly integrate [react-dropzone](https://react-dropzone.js.org/) with [Next.js 16](https://nextjs.org/) App Router, TypeScript, and Tailwind CSS.
 
 ## Why this project? (Next.js SSR & react-dropzone)
 

@@ -8,7 +8,7 @@ export default function Home() {
       <header className="max-w-4xl mx-auto w-full text-center space-y-4 mb-10">
         <div className="inline-flex items-center gap-2 px-3 py-1 text-xs font-medium rounded-full bg-blue-500/10 text-blue-700 dark:text-blue-400 border border-blue-500/20">
           <Sparkles className="w-3.5 h-3.5" />
-          <span>Next.js 15 App Router &amp; React Dropzone</span>
+          <span>Next.js 16 App Router &amp; React Dropzone</span>
         </div>
 
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-50">
@@ -32,7 +32,7 @@ export default function Home() {
           </span>
           <span className="inline-flex items-center gap-1.5 px-2.5 py-1 text-xs rounded-md bg-zinc-200/70 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300">
             <UploadCloud className="w-3.5 h-3.5 text-blue-500" />
-            react-dropzone 14
+            react-dropzone 20
           </span>
           <span className="inline-flex items-center gap-1.5 px-2.5 py-1 text-xs rounded-md bg-zinc-200/70 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300">
             TypeScript 5
