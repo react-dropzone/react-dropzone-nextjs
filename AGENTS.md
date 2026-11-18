@@ -39,8 +39,9 @@ npm run build      # Production Next.js build
 - Keep the body minimal, or omit it. A good subject plus the diff is usually enough; add a body only
   for what the code cannot show (why, a trade-off, a non-obvious consequence). Never restate the
   change or narrate the diff.
-- Disclose AI with an `Assisted-by: Antigravity` trailer. Never `Co-Authored-By`, and never add a
-  human's `Signed-off-by`.
+- Disclose AI with an `Assisted-by: <agent>:<model>` trailer (e.g.
+  `Assisted-by: Antigravity:gemini-3.8-flash`, `Assisted-by: Claude:claude-opus-4-8`). Never
+  `Co-Authored-By`, and never add a human's `Signed-off-by`.
 
 ## Next.js & React Dropzone Conventions
 

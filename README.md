@@ -2,9 +2,7 @@
 
 A modern, production-ready reference implementation demonstrating how to cleanly integrate [react-dropzone](https://react-dropzone.js.org/) with [Next.js 15](https://nextjs.org/) App Router, TypeScript, and Tailwind CSS.
 
----
-
-## 💡 Why This Project? (Next.js SSR & react-dropzone)
+## Why this project? (Next.js SSR & react-dropzone)
 
 Using `react-dropzone` in modern Next.js requires understanding how client-side file APIs interact with Server-Side Rendering (SSR) and the App Router:
 
@@ -20,9 +18,7 @@ Using `react-dropzone` in modern Next.js requires understanding how client-side 
 4. **Handling Uploads with Server Actions / API Routes**:
    Dropped `File` objects can be packaged into standard `FormData` and streamed to Next.js Route Handlers (`app/api/upload/route.ts`) or Server Actions.
 
----
-
-## ✨ Features
+## Features
 
 - **TypeScript 5**: Fully type-safe props, event handlers, and extended file preview interfaces.
 - **Dynamic Drag States**: Clear visual feedback for active dragging, accepted file types (`isDragAccept`), and rejected formats (`isDragReject`).
@@ -34,9 +30,7 @@ Using `react-dropzone` in modern Next.js requires understanding how client-side 
   - **Server Upload Simulation**: Interactive upload progress bar and file metadata summary.
 - **Tailwind CSS & Dark Mode**: Responsive design with seamless dark/light theme support.
 
----
-
-## 📂 Project Structure
+## Project Structure
 
 ```text
 react-dropzone-nextjs/
@@ -58,9 +52,7 @@ react-dropzone-nextjs/
 └── package.json
 ```
 
----
-
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Install dependencies
 
@@ -89,9 +81,7 @@ npm run lint
 npm run build
 ```
 
----
-
-## 🧩 Usage Example
+## Usage Example
 
 ### Basic Dropzone
 
@@ -131,8 +121,6 @@ async function uploadFiles(files: File[]) {
 }
 ```
 
----
-
-## 📄 License
+## License
 
 MIT
