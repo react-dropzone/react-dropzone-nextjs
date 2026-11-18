@@ -1,0 +1,22 @@
+version: 2
+
+updates:
+  - package-ecosystem: npm
+    directory: /
+    rebase-strategy: auto
+    schedule:
+      interval: "weekly"
+    commit-message:
+      prefix: "chore(deps):"
+    versioning-strategy: increase
+    groups:
+      patch:
+        patterns:
+          - "*"
+        update-types:
+          - patch
+      minor:
+        patterns:
+          - "*"
+        update-types:
+          - minor
