@@ -72,10 +72,13 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to view th
 
 ```bash
 # Type check
-npx tsc --noEmit
+npm run type-check
 
 # Lint
 npm run lint
+
+# Test
+npm test
 
 # Production build
 npm run build

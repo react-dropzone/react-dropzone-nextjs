@@ -20,7 +20,8 @@ and `next build` to verify production builds and static page generation.
 
 ```shell
 npm run lint       # ESLint / next lint
-npx tsc --noEmit   # TypeScript type check
+npm run type-check # TypeScript type check (tsc --noEmit)
+npm test           # Vitest unit tests
 npm run build      # Production Next.js build
 ```
 
