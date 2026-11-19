@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint .",
     "type-check": "tsc --noEmit",
-    "test": "vitest run"
+    "test": "vitest run",
+    "postinstall": "node -e \"try{require('fs').unlinkSync('node_modules/.bin/tsc')}catch(e){};require('fs').symlinkSync('../typescript-compiler/bin/tsc','node_modules/.bin/tsc')\""
   },
   "dependencies": {
     "clsx": "^2.1.1",
@@ -24,12 +25,12 @@
     "@types/node": "^26.6.6",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
-    "@typescript/native": "npm:typescript@^7.0.2",
     "eslint": "^10.15.0",
     "eslint-config-next": "^16.4.6",
     "postcss": "^8",
     "tailwindcss": "^4.3.5",
     "typescript": "npm:@typescript/typescript6@^6.0.2",
+    "typescript-compiler": "npm:typescript@^7.0.2",
     "vitest": "^5.1.1"
   }
 }
